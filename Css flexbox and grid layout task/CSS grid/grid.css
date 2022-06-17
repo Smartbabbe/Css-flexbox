@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: grey;
+}
+
+main{
+    padding-left: 35%;
+margin: 14% 0 14%;
+    width: 25%;
+    gap: 5px;
+    display: grid;
+    grid-template-rows: repeat(2fr 1fr 1fr);
+    grid-template-areas: 
+    "a a a b"
+    "c c d d";
+}
+
+a {
+    color: white;
+}
+
+main div{
+    padding: 2rem;
+    text-align: center;
+}
+
+.diva {
+    height: 100px;
+    color: red;
+    background-color: red;
+    grid-area: a;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.divb {
+    color: gold;
+    background-color: gold;
+    grid-area: b;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.divc {
+    /* height: 75px; */
+    color: aqua;
+    background-color: aqua;
+    grid-area: c;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+}
+
+.divde {
+    height: 75%;
+    display: grid;
+    gap: 5px;
+    padding: 0;
+    grid-area: d;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.divd {
+    color: azure;
+    background-color: azure;
+    height: 25px;
+}
+
+.dive {
+    color: azure;
+    background-color: azure;
+    height: 25px;
+}
